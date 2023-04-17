@@ -6,7 +6,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.xacalet.minesweeper.common.ui.resources.PainterResources
+import com.xacalet.minesweeper.common.ui.resources.MinesweeperIcons
 
 @Composable
 internal fun WrongFlagCell() {
@@ -15,7 +15,7 @@ internal fun WrongFlagCell() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(4.dp),
-            painter = PainterResources.iconCellWrongFlag(),
+            painter = MinesweeperIcons.CellWrongFlag,
             contentDescription = null
         )
     }

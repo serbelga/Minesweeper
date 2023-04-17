@@ -32,7 +32,7 @@ import com.xacalet.minesweeper.common.ui.component.NumericDisplay
 import com.xacalet.minesweeper.common.ui.component.bevel
 import com.xacalet.minesweeper.common.ui.component.cells.Cell
 import com.xacalet.minesweeper.common.ui.resources.DimenResources
-import com.xacalet.minesweeper.common.ui.resources.PainterResources
+import com.xacalet.minesweeper.common.ui.resources.MinesweeperIcons
 
 @Composable
 expect fun MainScreen()
@@ -79,12 +79,12 @@ internal fun GameStateImage(
     modifier: Modifier = Modifier
 ) {
     val painter = if (isPressed) {
-        PainterResources.iconSmileySurprised()
+        MinesweeperIcons.SmileySurprised
     } else {
         when (gameState) {
-            GameState.Won -> PainterResources.iconSmileySunglasses()
-            GameState.Lost -> PainterResources.iconSmileyDizzy()
-            else -> PainterResources.iconSmileySmiling()
+            GameState.Won -> MinesweeperIcons.SmileySunglasses
+            GameState.Lost -> MinesweeperIcons.SmileyDizzy
+            else -> MinesweeperIcons.SmileySmiling
         }
     }
 

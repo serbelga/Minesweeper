@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.xacalet.minesweeper.common.ui.component.BevelType
 import com.xacalet.minesweeper.common.ui.component.bevel
-import com.xacalet.minesweeper.common.ui.resources.PainterResources
+import com.xacalet.minesweeper.common.ui.resources.MinesweeperIcons
 import com.xacalet.minesweeper.common.ui.theme.unpressedGray
 import com.xacalet.minesweeper.common.ui.utils.NoIndication
 
@@ -40,7 +40,7 @@ internal fun FlagCell(
     ) {
         Image(
             modifier = Modifier.fillMaxSize().padding(4.dp),
-            painter = PainterResources.iconCellFlag(),
+            painter = MinesweeperIcons.CellFlag,
             contentDescription = null
         )
     }

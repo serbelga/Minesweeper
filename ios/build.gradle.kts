@@ -9,25 +9,15 @@ group = "com.xacalet.minesweeper.ios"
 kotlin {
     iosX64("uikitX64") {
         binaries {
-            executable() {
+            executable {
                 entryPoint = "main"
-                freeCompilerArgs += listOf(
-                    "-linker-option", "-framework", "-linker-option", "Metal",
-                    "-linker-option", "-framework", "-linker-option", "CoreText",
-                    "-linker-option", "-framework", "-linker-option", "CoreGraphics"
-                )
             }
         }
     }
     iosArm64("uikitArm64") {
         binaries {
-            executable() {
+            executable {
                 entryPoint = "main"
-                freeCompilerArgs += listOf(
-                    "-linker-option", "-framework", "-linker-option", "Metal",
-                    "-linker-option", "-framework", "-linker-option", "CoreText",
-                    "-linker-option", "-framework", "-linker-option", "CoreGraphics"
-                )
             }
         }
     }

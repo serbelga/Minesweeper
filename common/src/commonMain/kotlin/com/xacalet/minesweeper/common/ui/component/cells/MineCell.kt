@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.xacalet.minesweeper.common.ui.resources.PainterResources
+import com.xacalet.minesweeper.common.ui.resources.MinesweeperIcons
 
 @Composable
 internal fun MineCell(hasExploded: Boolean) {
@@ -18,7 +18,7 @@ internal fun MineCell(hasExploded: Boolean) {
                 .fillMaxSize()
                 .background(if (hasExploded) Color.Red else Color.Transparent)
                 .padding(4.dp),
-            painter = PainterResources.iconCellMine(),
+            painter = MinesweeperIcons.CellMine,
             contentDescription = null
         )
     }

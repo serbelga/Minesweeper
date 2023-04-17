@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.dp
-import com.xacalet.minesweeper.common.ui.resources.PainterResources
+import com.xacalet.minesweeper.common.ui.resources.MinesweeperIcons
 import kotlin.math.absoluteValue
 
 sealed class DisplayValue {
@@ -25,18 +25,18 @@ internal fun SevenSegment(
     displayValue: DisplayValue
 ) {
     val painter: Painter = when (displayValue) {
-        DisplayValue.Minus -> PainterResources.iconDisplayMinus()
+        DisplayValue.Minus -> MinesweeperIcons.DisplayMinus
         is DisplayValue.Number -> when (displayValue.number) {
-            0 -> PainterResources.iconDisplay0()
-            1 -> PainterResources.iconDisplay1()
-            2 -> PainterResources.iconDisplay2()
-            3 -> PainterResources.iconDisplay3()
-            4 -> PainterResources.iconDisplay4()
-            5 -> PainterResources.iconDisplay5()
-            6 -> PainterResources.iconDisplay6()
-            7 -> PainterResources.iconDisplay7()
-            8 -> PainterResources.iconDisplay8()
-            9 -> PainterResources.iconDisplay9()
+            0 -> MinesweeperIcons.Display0
+            1 -> MinesweeperIcons.Display1
+            2 -> MinesweeperIcons.Display2
+            3 -> MinesweeperIcons.Display3
+            4 -> MinesweeperIcons.Display4
+            5 -> MinesweeperIcons.Display5
+            6 -> MinesweeperIcons.Display6
+            7 -> MinesweeperIcons.Display7
+            8 -> MinesweeperIcons.Display8
+            9 -> MinesweeperIcons.Display9
             else -> throw IllegalArgumentException()
         }
     }
