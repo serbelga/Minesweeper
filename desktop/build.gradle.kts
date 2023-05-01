@@ -2,9 +2,9 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
+    alias(libs.plugins.composeMultiplatform)
     id("java")
     kotlin("multiplatform")
-    alias(libs.plugins.composeMultiplatform)
 }
 
 group = "com.xacalet.minesweeper"

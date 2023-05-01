@@ -1,8 +1,8 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    kotlin("multiplatform")
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.composeMultiplatform)
-    id("com.android.library")
+    kotlin("multiplatform")
 }
 
 group = "com.xacalet.minesweeper.common"
